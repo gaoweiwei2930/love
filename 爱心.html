@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        @keyframes color1{
+            0%{
+                background-color: black;
+            }
+            50%{
+                background-color: rgb(91, 90, 90);
+            }
+            100%{
+                background-color: rgb(224, 246, 238);
+            }
+        }
+        @keyframes run1{
+            0%{
+                transform: rotate(45deg) scale(1.8);
+            }
+            10%{
+                transform: rotate(45deg) scale(1);
+            }
+            20%{
+                transform: rotate(-45deg) scale(.5);
+            }
+            30%{
+                transform: rotate(45deg) scale(1.5);
+            }
+            40%{
+                transform: rotate(145deg) scale(1.8);
+            }
+            50%{
+                transform: rotate(-270deg) scale(.5);
+            }
+            60%{
+                transform: rotate(0deg) scale(.5);
+            }
+            70%{
+                transform: rotate(-45deg) scale(1);
+            }
+            80%{
+                transform: rotate(200deg) scale(.5);
+            }
+            90%{
+                transform: rotate(15deg) scale(.2);
+            }
+            100%{
+                transform: rotate(0deg) scale(.5);
+            }
+        }
+        .div1{
+            position: relative;
+            color: #fff;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            margin: 0rem auto;
+            margin-top: 40rem;
+            transform: rotate(45deg);
+            animation:run1 infinite ease-out 2s;
+        }
+        .div1::before{
+            position: absolute;
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateX(-10rem);
+        }
+        .div1::after{
+            position: absolute;
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateY(-10rem);
+        }
+        body{
+        
+           overflow: hidden;
+           /* background: url(./bg.jpg); */
+           background-size: cover;
+           animation: color1 infinite 3s;
+           /* min-width: 200px; */
+        }
+       
+        @keyframes run2{
+            0%{
+                transform: rotate(45deg) scale(1.8);
+            }
+            10%{
+                transform: rotate(45deg) scale(1);
+            }
+            20%{
+                transform: rotate(45deg) scale(.5);
+            }
+            30%{
+                transform: rotate(45deg) scale(1.5);
+            }
+            40%{
+                transform: rotate(-145deg) scale(.2);
+            }
+            50%{
+                transform: rotate(70deg) scale(1);
+            }
+            60%{
+                transform: rotate(0deg) scale(1.5);
+            }
+            70%{
+                transform: rotate(195deg) scale(.8);
+            }
+            80%{
+                transform: rotate(-100deg) scale(1.2);
+            }
+            90%{
+                transform: rotate(15deg) scale(.5);
+            }
+            100%{
+                transform: rotate(100deg) scale(1);
+            }
+        }
+        .div2{
+            position: relative;
+            color: #fff;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            margin: -40rem 10rem;
+            transform: rotate(45deg);
+            animation:run2 infinite 2s;
+        }
+        .div2::before{
+            position: absolute;
+           
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateX(-10rem);
+        }
+        .div2::after{
+            position: absolute;
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateY(-10rem);
+        }
+        @keyframes run3{
+            0%{
+                transform: rotate(45deg) scale(1.2);
+            }
+            10%{
+                transform: rotate(45deg) scale(.2);
+            }
+            20%{
+                transform: rotate(45deg) scale(.5);
+            }
+            30%{
+                transform: rotate(45deg) scale(1.1);
+            }
+            40%{
+                transform: rotate(-45deg) scale(.4);
+            }
+            50%{
+                transform: rotate(-70deg) scale(1.5);
+            }
+            60%{
+                transform: rotate(100deg) scale(1.2);
+            }
+            70%{
+                transform: rotate(145deg) scale(.6);
+            }
+            80%{
+                transform: rotate(-200deg) scale(.2);
+            }
+            90%{
+                transform: rotate(15deg) scale(1);
+            }
+            100%{
+                transform: rotate(-50deg) scale(.5);
+            }
+        }
+        .div3{
+            position: relative;
+            color: #fff;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+           right: -100rem;
+           top: 8rem;
+            transform: rotate(45deg);
+            animation:run3 infinite 2s ease-in;
+        }
+        .div3::before{
+            position: absolute;
+           
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateX(-10rem);}
+        .div3::after{
+            position: absolute;
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            background-color: rgb(255, 0, 0);
+            transform: translateY(-10rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+    </div>
+    <div class="div2">
+    </div>
+    <div class="div3">
+
+    </div>
+    <video src="./love.mp4" style="opacity:0;" loop autoplay></video>
+</body>
+</html>
+<script>
+var timer = null;
+
+function setRem() {
+    var ui_w = 1366;
+    var client_w = document.documentElement.clientWidth || document.body.clientWidth;
+    //设置最大最小宽度
+    client_w = client_w > 1366 ? 1366 : client_w;
+    client_w = client_w < 100 ? 100 : client_w;
+    var html = document.getElementsByTagName("html")[0];
+    html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+
+
+}
+
+setRem();
+
+//防抖
+window.onresize = function () {
+    clearTimeout(timer);
+    timer = setTimeout(setRem, 500)
+}
+
+//节流
+// var flg = true;
+// window.onresize = function () {
+//     if (flg) {
+//         flg = false;
+//         setTimeout(function () {
+//             flg = true;
+//             setRem();
+//         }, 300)
+//     }
+// }
+
+</script>
